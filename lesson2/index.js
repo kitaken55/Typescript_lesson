@@ -1,19 +1,20 @@
-var hasValue = true;
-var count = 10;
-var negative = -0.12;
-var single = 'hello';
-var double = "hello";
-var back = "hello";
-var hello;
+"use strict";
+let hasValue = true;
+let count = 10;
+let negative = -0.12;
+let single = 'hello';
+let double = "hello";
+let back = `hello`;
+let hello;
 hello = 'sss';
-var person = {
+const person = {
     name: 'Jack',
     age: 12
 };
-var fruits = ['apple', 'banana', 'grape'];
+const fruits = ['apple', 'banana', 'grape'];
 // fruits.push(2); //エラー検出してくれる。
 // fruits.reduce(); //エラー検出してくれる。
-var book = ['business', 1500, false];
+const book = ['business', 1500, false];
 // 19. Enumを使って、特定のまとまったグループのみを受け入れる列挙型を使う方法
 var CoffeeSise;
 (function (CoffeeSise) {
@@ -22,41 +23,41 @@ var CoffeeSise;
     CoffeeSise[CoffeeSise["GRANDE"] = 2] = "GRANDE";
     CoffeeSise[CoffeeSise["VENTI"] = 3] = "VENTI";
 })(CoffeeSise || (CoffeeSise = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: CoffeeSise.TALL
 };
 coffee.size = CoffeeSise.SHORT;
-var unionType = 10;
-var unionTypes = [21, 'hello'];
-var apple = 'apple';
+let unionType = 10;
+let unionTypes = [21, 'hello'];
+const apple = 'apple';
 //リテラル型は複数することで、enumに近いことが可能。以下はsmallかmediumかlargeの3種類しか選べない。
-var clothSize = 'small';
+let clothSize = 'small';
 add(3, 2);
 function sayHello() {
     console.log("a");
     return;
 }
 console.log(sayHello());
-var tmp;
+let tmp;
 function add(num1, num2) {
     return num1 + num2;
 }
-var anotherAdd = function (num1, num2) {
+const anotherAdd = function (num1, num2) {
     return num1 + num2;
 };
-var doubleNumber = function (number) { return number * 2; };
+const doubleNumber = number => number * 2;
 //第一引数にnumber型, 第ニ引数にnumberを引数に持ったnumberが返り値の関数が入る
 function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
+    const doubleNum = cb(num * 2);
     console.log(doubleNum);
 }
-doubleAndHandle(21, function (doubleNum) {
+doubleAndHandle(21, doubleNum => {
     return doubleNum;
 });
-var unknownInput;
-var anyInput;
-var text;
+let unknownInput;
+let anyInput;
+let text;
 unknownInput = 'hello';
 anyInput = 'hello';
 text = anyInput;
