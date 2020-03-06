@@ -1,13 +1,12 @@
-// interface Human {
-//     name: 'Quill';
-//     age: number;
-//     greeting(message: string): void;
-// }
+interface Human {
+    name: string;
+    age: number;
+    greeting(message: string): void;
+}
 
-// class Developer implements Human {
-//     constructor(public name: string, public age: number) {
-//         greeting(message: string) {
-//             console.log('Hello!');
-//         }
-//     }
-// }
+class Developer implements Human {
+    constructor(public name: string, public age: number) {}
+    greeting(message: string) {
+        console.log('Hello!');
+    }
+}
